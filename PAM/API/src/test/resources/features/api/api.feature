@@ -40,7 +40,3 @@ Feature: Fetch the weather report for the Location and the date
     Examples:
       | longitude | latitude | errorcode |
       | sdsds     | dsdss    | 500       |
-
-
-
-
