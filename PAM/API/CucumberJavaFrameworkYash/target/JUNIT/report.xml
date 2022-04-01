@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.513">
+<testcase classname="Check hooks with login" name="Test the hooks" time="6.498">
+<system-out><![CDATA[Given User is on the Login Page for hooks demo..............................passed
+When user enters login name and password and login..........................passed
+Then Home page should be displayed..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,86 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-26T20:01:54.158Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5502000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.HooksDemoSteps.browserSetUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test the hooks",
+        "description": "",
+        "id": "check-hooks-with-login;test-the-hooks",
+        "after": [
+          {
+            "result": {
+              "duration": 802000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.HooksDemoSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Login Page for hooks demo",
+            "match": {
+              "location": "steps.HooksDemoSteps.user_is_on_the_Login_Page_for_hooks_demo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters login name and password and login",
+            "match": {
+              "location": "steps.HooksDemoSteps.user_enters_login_name_and_password_and_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Home page should be displayed",
+            "match": {
+              "location": "steps.HooksDemoSteps.home_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hooksDemo"
+          }
+        ]
+      }
+    ],
+    "name": "Check hooks with login",
+    "description": "",
+    "id": "check-hooks-with-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HooksDemoDisplay.feature",
+    "tags": []
+  }
+]
