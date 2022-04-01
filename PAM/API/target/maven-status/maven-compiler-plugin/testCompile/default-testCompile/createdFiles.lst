@@ -1,0 +1,7 @@
+com/PAMEDIA/test/framework/hooks/Screenshot/SetAPI.class
+com/PAMEDIA/test/RunAPISuite.class
+com/PAMEDIA/test/StepDefinitions/api/WeatherDateLocationStepDefs.class
+com/PAMEDIA/test/framework/CommonMethods/APICommonMethods.class
+com/PAMEDIA/test/framework/ENUMS/APIEndPoints.class
+com/PAMEDIA/test/framework/POJOs/WeatherDetails.class
+com/PAMEDIA/test/framework/Helpers/GetResponse.class

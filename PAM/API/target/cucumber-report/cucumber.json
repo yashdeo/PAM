@@ -1,0 +1,471 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User has to be on the base uri",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 420894115,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the base URI",
+            "match": {
+              "location": "WeatherDateLocationStepDefs.user_is_on_the_base_URI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1098132,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.setAPI()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Validate the status code of the valid response and check the headers",
+        "description": "",
+        "id": "fetch-the-weather-report-for-the-location-and-the-date;validate-the-status-code-of-the-valid-response-and-check-the-headers",
+        "after": [
+          {
+            "result": {
+              "duration": 8476535,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.writeExtentReport()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1795163609,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user sends the get request for the locations longitude \"53.1003\" and latitude \"0.9936\" to fetch all the users",
+            "match": {
+              "arguments": [
+                {
+                  "val": "53.1003",
+                  "offset": 60
+                },
+                {
+                  "val": "0.9936",
+                  "offset": 83
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_user_sends_the_get_request_for_the_locations_longitude_and_latitude_to_fetch_all_the_users(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4600681,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the success code 200 along with all the available users and the correct response headers should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 17
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_success_code_along_with_all_the_available_users_and_the_correct_response_headers_should_be_displayed(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Positive"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User has to be on the base uri",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 55609,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the base URI",
+            "match": {
+              "location": "WeatherDateLocationStepDefs.user_is_on_the_base_URI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 269938,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.setAPI()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Search the location to get the \"woeid\" for the given location and then validate the reponse",
+        "description": "",
+        "id": "fetch-the-weather-report-for-the-location-and-the-date;search-the-location-to-get-the-\"woeid\"-for-the-given-location-and-then-validate-the-reponse;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2615396,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.writeExtentReport()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1074913456,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user searches with the location \"Nottingham\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nottingham",
+                  "offset": 37
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_user_searches_with_the_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1722252776,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "send the request to fetch the weather report for the date \"2020/10/05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020/10/05",
+                  "offset": 59
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.send_the_request_to_fetch_the_weather_report_for_the_date(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5395428521,
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertTrue(Assert.java:42)\n\tat org.testng.Assert.assertTrue(Assert.java:52)\n\tat com.PAMEDIA.test.StepDefinitions.api.WeatherDateLocationStepDefs.the_valid_response_for_the_selected_location_and_date_should_be_return(WeatherDateLocationStepDefs.java:37)\n\tat ✽.Then the valid response for the selected location and date should be return(features/api/api.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "the valid response for the selected location and date should be return",
+            "match": {
+              "location": "WeatherDateLocationStepDefs.the_valid_response_for_the_selected_location_and_date_should_be_return()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Positive"
+          },
+          {
+            "line": 1,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User has to be on the base uri",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 80818,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the base URI",
+            "match": {
+              "location": "WeatherDateLocationStepDefs.user_is_on_the_base_URI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 340433,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.setAPI()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Check the error codes for the incorrect location and incorrect date",
+        "description": "",
+        "id": "fetch-the-weather-report-for-the-location-and-the-date;check-the-error-codes-for-the-incorrect-location-and-incorrect-date;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8485906,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.writeExtentReport()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 810236999,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user searches with the location \"3232323\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3232323",
+                  "offset": 37
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_user_searches_with_the_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 693098136,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "send the request to fetch the weather report for the date \"2020/28/28\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020/28/28",
+                  "offset": 59
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.send_the_request_to_fetch_the_weather_report_for_the_date(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 221835,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the error code \"404\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 16
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_error_code_should_be_displayed(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@API"
+          },
+          {
+            "line": 25,
+            "name": "@Negative"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User has to be on the base uri",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 184379,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the base URI",
+            "match": {
+              "location": "WeatherDateLocationStepDefs.user_is_on_the_base_URI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 725691,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.setAPI()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Validate the status code of the invalid longitude and lattitudes",
+        "description": "",
+        "id": "fetch-the-weather-report-for-the-location-and-the-date;validate-the-status-code-of-the-invalid-longitude-and-lattitudes;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6054468,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetAPI.writeExtentReport()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 630686271,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user sends the get request for the locations longitude \"sdsds\" and latitude \"dsdss\" to fetch all the users",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sdsds",
+                  "offset": 60
+                },
+                {
+                  "val": "dsdss",
+                  "offset": 81
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_user_sends_the_get_request_for_the_locations_longitude_and_latitude_to_fetch_all_the_users(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 251220,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the error code \"500\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 16
+                }
+              ],
+              "location": "WeatherDateLocationStepDefs.the_error_code_should_be_displayed(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@API"
+          },
+          {
+            "line": 36,
+            "name": "@Negative"
+          }
+        ]
+      }
+    ],
+    "name": "Fetch the weather report for the Location and the date",
+    "description": "As a User, I want to fetch the weather report for the location and the date\r\nSo that the weatherreport for the desired location and date should be available",
+    "id": "fetch-the-weather-report-for-the-location-and-the-date",
+    "keyword": "Feature",
+    "uri": "features/api/api.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@API"
+      }
+    ]
+  }
+]

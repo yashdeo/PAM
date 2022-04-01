@@ -1,0 +1,7 @@
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/framework/ENUMS/APIEndPoints.java
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/framework/POJOs/WeatherDetails.java
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/RunAPISuite.java
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/framework/CommonMethods/APICommonMethods.java
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/framework/Helpers/GetResponse.java
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/framework/hooks/Screenshot/SetAPI.java
+/home/raghunandan/Downloads/PA Media Group/PA Media with API Framework/API/src/test/java/com/PAMEDIA/test/StepDefinitions/api/WeatherDateLocationStepDefs.java
